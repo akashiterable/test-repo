@@ -2,9 +2,12 @@ package test
 
 import (
 	"testing"
+	"fmt"
 )
 
 func Test_SayHello_ValidArgument(t *testing.T) {
+	fmt.Printf("HELLOW")
+
 	inputs := []struct {
 		name   string
 		result string

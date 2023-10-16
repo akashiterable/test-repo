@@ -32,10 +32,6 @@ jobs:
     needs: test
 
     steps:
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Checkout Code
         uses: actions/checkout@v2
 
@@ -53,5 +49,7 @@ jobs:
       - name: Run Code Coverage
         run: go test -v ./... -coverprofile=coverage.txt
 
-      - name: Upload Code Coverage
-        run: codecov
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

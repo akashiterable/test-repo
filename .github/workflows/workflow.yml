@@ -3,7 +3,7 @@ name: Go Test and Coverage
 on:
   push:
     branches:
-      - master # Adjust to the default branch of your repository
+      - test # Adjust to the default branch of your repository
 
 jobs:
   test:

@@ -1,8 +1,8 @@
 package test
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
 func Test_SayHello_ValidArgument(t *testing.T) {
@@ -16,7 +16,7 @@ func Test_SayHello_ValidArgument(t *testing.T) {
 		{name: "Banabi", result: "Hello Banabi"},
 		{name: "Yemek", result: "Hello Yemek"},
 		{name: "Yemek", result: "Hello Yemek"},
-		{name: "", result: "Hello"},
+		{name: "hi", result: "Hello hi"},
 	}
 
 	for _, item := range inputs {

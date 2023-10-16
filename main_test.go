@@ -15,6 +15,8 @@ func Test_SayHello_ValidArgument(t *testing.T) {
 		{name: "Yemeksepeti", result: "Hello Yemeksepeti"},
 		{name: "Banabi", result: "Hello Banabi"},
 		{name: "Yemek", result: "Hello Yemek"},
+		{name: "Yemek", result: "Hello Yemek"},
+		{name: "", result: "Hello"},
 	}
 
 	for _, item := range inputs {
